@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Type Ahead 👀</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+  <div class="search-option">
+    <form class="search-form">
+      <input type="text" class="search" placeholder="System or Sys. Number">
+      <ul class="suggestions">
+        <li>Filter for a System</li>
+        <li>or a Drawing Number</li>
+      </ul>
+    </form>
+  </div>
+  <div class="build-option panel panel-default">
+    <div class="panel-heading">Build Drawing Title </div>
+    <div class="panel-body">
+    <form>
+    <div class="marg">
+      <label for="system">System:</label>
+      <select id="system" name="system">
+        <option value="ERROR" disabled>***Mechanincal Drawings & Layouts***</option>
+        <option value="50">General non service specific: 50</option>
+        <option value="51">Spare: 51</option>
+        <option value="52">Drainage: 52</option>
+        <option value="53">Domestic Cold Water: 53</option>
+        <option value="54">Process Gasses: 54</option>
+        <option value="55">Process Cooling: 55</option>
+        <option value="56">Heating: 56</option>
+        <option value="57">Ventilation: 57</option>
+        <option value="58">Spare: 58</option>
+        <option value="59">General Plant Layout: 59</option>
+        <option value="ERROR" disabled>***Electrical Drawings & Layouts***</option>
+        <option value="60">General Non Service Specific: 60</option>
+        <option value="61">Containment, Cable and Busbar: 61</option>
+        <option value="62">Small Power: 62</option>
+        <option value="63">Lighting & Lighting Controls: 63</option>
+        <option value="64">Data and Telephony: 64</option>
+        <option value="65">Lightning Protection: 65</option>
+        <option value="66">Spare: 66</option>
+        <option value="67">Fire Alarm & Emergency Voice Comms: 67</option>
+        <option value="68">Security: 68</option>
+        <option value="69">General Plant Layout: 69</option>
+      </select>
+    </div>
+    <div class="marg">
+      <label for="floor">Floor:</label>
+      <select id="floor" name="floor">
+        <option value="0">Level-00</option>
+        <option value="1">Level-01</option>
+        <option value="2">Level-02</option>
+        <option value="3">Level-03</option>
+        <option value="4">Level-04</option>
+        <option value="5">Level-05</option>
+        <option value="6">Level-06</option>
+        <option value="9">Schematic</option>
+      </select>
+    </div>
+    <div class="marg">
+      <label for="service">Service:</label>
+      <select id="service" name="service">
+        <option value="Error" disabled>***Combined Works***</option>
+        <option value="0">External Works</option>
+        <option value="0">Coordinated Layouts and Sections</option>
+        <option value="0">Non Specific</option>
+        <option value="Error" disabled>***Mechanincal Public Health***</option>  
+        <option value="0">General/ All</option>  
+        <option value="1">Above Ground Drainage - Sanitary</option>  
+        <option value="2">Lab Waste Water</option>
+        <option value="Error" disabled>***Gasses***</option>
+        <option value="0">General/ All</option>  
+        <option value="1">Natural Gas</option>  
+        <option value="2">Compressed Dry Air</option>  
+        <option value="3">Nitrogen</option>  
+        <option value="4">Vacuum</option>
+        <div class="dropdown-divider"></div>
+        <option value="Error" disabled>***Cooling***</option>
+        <option value="0">Cooling</option> 
+        <option value="1">HVAC Cooling</option>
+        <option value="2">Process Cooling Water</option>         
+        <option value="Error" disabled>***Heating***</option>
+        <option value="0">Heating</option>       
+        <option value="1">LTHW - CT Heating</option>       
+        <option value="2">LTHW - VT Heating</option>       
+        <option value="Error" disabled>***Ventilation***</option>
+        <option value="0">Ventilation General</option>    
+        <option value="1">Lab Make Up Air</option>    
+        <option value="2">Return Air</option>    
+        <option value="3">Office Air</option>    
+        <option value="4">Toilet Extract</option>    
+        <option value="5">Shared Lab Extract</option>    
+        <option value="6">General Extract</option>    
+        <option value="Error" disabled>***Electrical***</option>
+        <option value="0">General Non Service Specific</option>
+        <option value="0">Containment, Cable and Busbar</option>
+        <option value="0">Small Power</option>
+        <option value="0">Lighting and Lighting Controls</option>
+        <option value="0">Data and Telephony</option>
+        <option value="0">Lightning Protection</option>
+        <option value="0">Spare</option>
+        <option value="0">Fire Alarm and Emergency Voice Comms</option>
+        <option value="0">Security, Access Control & CCTV</option>
+        <option value="0">General Plant Layouts</option>
+      </select>
+    </div>
+    <div class="marg">
+      <label for="zone">Zone:</label>
+      <select id="zone" name="zone">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </div>
+      <a class="btn btn-primary marg" id="numGenerator">Submit</a>
+    </form>
+    </div>
+  </div>
+  <div id="result" class="resultOut"></div>
+
+
+  <!-- script below -->
+<script src="index.js"></script>
+</body>
+</html>
